@@ -1,0 +1,17 @@
+[package]
+authors = ["Yunsur <yunsur.shi@gmail.com>"]
+edition = "2018"
+name = "suricata-elasticsearch-output"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+name = "elasticsearch_output"
+
+[dependencies]
+serde = "~1"
+serde_json = "~1"
+serde_derive = "~1"
+elastic = "~0.21.0-pre.5"
+elastic_derive = "~0.21.0-pre.5"
+suricata = {version = "6.0.3-alpha", package = "suricata"}
